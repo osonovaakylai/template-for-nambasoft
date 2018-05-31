@@ -1,0 +1,90 @@
+header(uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar")
+    .uk-container
+        nav.uk-navbar-container(uk-navbar, style="position: relative; z-index: 980;", class="uk-visible@m")
+            .uk-navbar-left
+                ul.uk-navbar-nav
+                    li.uk-active
+                        a(href="index.html") LOGO
+            .uk-navbar-center
+                ul.uk-navbar-nav
+                    li.uk-active
+                        a(href="index.html") Home
+                    li
+                        a(href="#about", uk-scroll) About
+                    li
+                        a(href="") Service
+                        div.uk-navbar-dropdown
+                            ul.uk-nav.uk-navbar-dropdown-nav
+                                li.uk-active
+                                    a(href="") Active
+                                li.uk-nav-divider
+                                li
+                                    a(href="") Item
+                                li.uk-nav-divider
+                                li
+                                    a(href="") Item
+                    li
+                        a(href="#team", uk-scroll) Team
+                    li
+                        a(href="#more", onclick="UIkit.notification({message: 'Hello!!!', pos: 'top-right'})") More
+
+            .uk-navbar-right
+                ul.uk-navbar-nav
+                    li
+                        a(href="#signIn", uk-toggle) Sign in
+                        div.uk-flex-top(id="signIn", uk-modal)
+                            div.uk-modal-dialog.uk-modal-body.uk-margin-auto-vertical
+                                button.uk-modal-close-default(type="button", uk-close)
+                                h3 Sign in
+                                form(action="")
+                                    .uk-margin
+                                        .uk-inline
+                                            span.uk-form-icon.uk-form-icon-flip(uk-icon="icon: user")
+                                            input.uk-input(type="text", placeholder="Name")
+                                    .uk-margin
+                                        .uk-inline
+                                            span.uk-form-icon.uk-form-icon-flip(uk-icon="icon: lock")
+                                            input.uk-input(type="text", placeholder="Password")
+                                    .uk-margin.uk-text-right
+                                        button.uk-button.uk-button-default(type="submit") OK
+                    div
+                        a.uk-navbar-toggle(href="", uk-search-icon="")
+                        div.uk-navbar-dropdown(uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav")
+                            div.uk-grid-small.uk-flex-middle(uk-grid)
+                                .uk-width-expand
+                                    form.uk-search.uk-search-navbar.uk-width-1-1(action="")
+                                        input.uk-search-input(type="search", placeholder="Search...", autofocus)
+                                .uk-width-auto
+                                    a.uk-navbar-dropdown-close(href="", uk-close)
+                    li.russian
+                        a(href="", rel="ru") RU
+                    li.english
+                        a(href="", rel="en") EN
+        .mobile(class="uk-hidden@m")
+            button.uk-button.uk-button-default(type="button" uk-icon="list")
+            div.uk-margin-remove(uk-dropdown="mode: click;")
+                ul.uk-nav.uk-dropdown-nav
+                    li
+                        a(href="index.html") Logo
+                    li.uk-nav-divider
+                    li
+                        a(href="index.html") Home
+                    li.uk-nav-divider
+                    li
+                        a(href="#about", uk-scroll) About
+                    li.uk-nav-divider
+                    li
+                        a(href="") Service
+                    li.uk-nav-divider
+                    li
+                        a(href="#team", uk-scroll) Team
+                    li.uk-nav-divider
+                    li.russian
+                        a(href="", rel="ru") RU
+                    li.english
+                        a(href="", rel="en") EN
+
+
+
+
+                            

@@ -1,0 +1,42 @@
+a(href="", uk-toggle="target: #register") Регистрация
+#register.uk-flex-top(uk-modal)
+    .uk-modal-dialog.uk-modal-body.uk-margin-auto-vertical
+        button.uk-modal-close-default(type="button", uk-close)
+        .uk-text-center
+            h3 Регистрация
+            form.uk-margin-top(action="")
+                .uk-margin.uk-margin-bottom
+                    .uk-inline(class="uk-width-1-1")
+                        span.uk-form-icon.uk-form-icon-flip(uk-icon="icon: user")
+                        input.uk-input(type="text" , placeholder="Имя Фамилия*")
+                .uk-margin.uk-margin-bottom
+                    .uk-inline(class="uk-width-1-1")
+                        span.uk-form-icon.uk-form-icon-flip(uk-icon="icon: mail")
+                        input.uk-input(type="mail" , placeholder="Email*")
+                .uk-margin.uk-margin-bottom
+                    .uk-inline(class="uk-width-1-1")
+                        span.uk-form-icon.uk-form-icon-flip(uk-icon="icon: lock") 
+                        input.uk-input(type="password", placeholder="Пароль*")
+                .uk-margin.uk-margin-bottom
+                    .uk-inline(class="uk-width-1-1")
+                        span.uk-form-icon.uk-form-icon-flip(uk-icon="icon: lock") 
+                        input.uk-input(type="password", placeholder="Пароль (еще раз)*")
+                .uk-grid.uk-margin-bottom(class="uk-child-width-1-2@s", uk-grid)
+                    div
+                        button.uk-button.uk-button-default(type="submit") Войти c <span uk-icon="icon: facebook"></span>
+                    div
+                        button.uk-button.uk-button-default(type="submit") Войти c <span uk-icon="icon: google-plus"></span>
+                .uk-margin.uk-grid-small.uk-child-width-auto.uk-grid
+                    label
+                        input.uk-radio(type='radio', name='radio2', checked='')
+                        |  Женщина
+                    label
+                        input.uk-radio(type='radio', name='radio2')
+                        |  Мужчина
+                label.uk-margin
+                    input.uk-checkbox.uk-margin-small-right(type='checkbox') 
+                    |Terms & Conditions
+                br
+                button.uk-margin.uk-button.uk-button-default.log-in.uk-box-shadow-hover-large(type="submit") Регистрация
+
+            a.forget-password.uk-margin.uk-margin-bottom.uk-button.uk-button-text(href="") Уже зарегистрированы?

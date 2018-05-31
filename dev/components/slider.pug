@@ -1,0 +1,21 @@
+section.slider
+    div.uk-position-relative.uk-visible-toggle.uk-light(uk-slideshow="autoplay: true, autoplay-interval: 3000")
+        ul.uk-slideshow-items
+            li
+                img(src='http://via.placeholder.com/1349x400', alt='slider1', uk-cover='')
+            li
+                img(src='http://via.placeholder.com/1349x400', alt='slider2', uk-cover='')
+            li
+                img(src='http://via.placeholder.com/1349x400', alt='slider3', uk-cover='')
+                           
+
+        a.uk-position-center-left.uk-position-small.uk-hidden-hover(href = "#", uk-slidenav-previous, uk-slideshow-item="previous")
+        a.uk-position-center-right.uk-position-small.uk-hidden-hover(href = "#", uk-slidenav-next, uk-slideshow-item="next")
+        .uk-position-bottom-center.uk-position-small    
+            ul.uk-dotnav
+                li(uk-slideshow-item='0')
+                    a(href='#') Item 1
+                li(uk-slideshow-item='1')
+                    a(href='#') Item 2
+                li(uk-slideshow-item='2')
+                    a(href='#') Item 3

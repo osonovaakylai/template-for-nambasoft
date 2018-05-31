@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Page description">
+    <meta name="keywords" content="page, keywords">
+    <meta name="theme-color" content="#000000">
+    <meta name="copyright" content="Author">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="Application Name">
+    <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/favicons/64x64.png" type="image/png">
+    <link rel="icon" href="img/favicons/152x152.png" type="image/png" sizes="152x152">
+    <link rel="icon" href="img/favicons/256x256.png" type="image/png" sizes="256x256">
+    <link rel="icon" href="img/favicons/512x512.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="img/favicons/152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/favicons/256x256.png" sizes="256x256">
+    <link rel="apple-touch-icon" href="img/favicons/512x512.png" sizes="512x512">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body class="uk-animation-fade">
+    <div class="preloader-wrapper">
+      <div class="preloader"><img src="img/gif/preloader.gif" alt=""></div>
+    </div>
+    <header uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+      <div class="uk-container">
+        <nav class="uk-navbar-container uk-visible@m" uk-navbar style="position: relative; z-index: 980;">
+          <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="index.html">LOGO</a></li>
+            </ul>
+          </div>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="index.html">Home</a></li>
+              <li><a href="#about" uk-scroll>About</a></li>
+              <li><a href="">Service</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="">Active</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="">Item</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#team" uk-scroll>Team</a></li>
+              <li><a href="#more" onclick="UIkit.notification({message: 'Hello!!!', pos: 'top-right'})">More</a></li>
+            </ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li><a href="#signIn" uk-toggle>Sign in</a>
+                <div class="uk-flex-top" id="signIn" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <h3>Sign in</h3>
+                    <form action="">
+                      <div class="uk-margin">
+                        <div class="uk-inline"><span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
+                          <input class="uk-input" type="text" placeholder="Name">
+                        </div>
+                      </div>
+                      <div class="uk-margin">
+                        <div class="uk-inline"><span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                          <input class="uk-input" type="text" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="uk-margin uk-text-right">
+                        <button class="uk-button uk-button-default" type="submit">OK</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </li>
+              <div><a class="uk-navbar-toggle" href="" uk-search-icon=""></a>
+                <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-expand">
+                      <form class="uk-search uk-search-navbar uk-width-1-1" action="">
+                        <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                      </form>
+                    </div>
+                    <div class="uk-width-auto"><a class="uk-navbar-dropdown-close" href="" uk-close></a></div>
+                  </div>
+                </div>
+              </div>
+              <li class="russian"><a href="" rel="ru">RU</a></li>
+              <li class="english"><a href="" rel="en">EN</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="mobile uk-hidden@m">
+          <button class="uk-button uk-button-default" type="button" uk-icon="list"></button>
+          <div class="uk-margin-remove" uk-dropdown="mode: click;">
+            <ul class="uk-nav uk-dropdown-nav">
+              <li><a href="index.html">Logo</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="index.html">Home</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#about" uk-scroll>About</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="">Service</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#team" uk-scroll>Team</a></li>
+              <li class="uk-nav-divider"></li>
+              <li class="russian"><a href="" rel="ru">RU</a></li>
+              <li class="english"><a href="" rel="en">EN</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="slider">
+      <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="autoplay: true, autoplay-interval: 3000">
+        <ul class="uk-slideshow-items">
+          <li><img src="http://via.placeholder.com/1349x400" alt="slider1" uk-cover=""></li>
+          <li><img src="http://via.placeholder.com/1349x400" alt="slider2" uk-cover=""></li>
+          <li><img src="http://via.placeholder.com/1349x400" alt="slider3" uk-cover=""></li>
+        </ul><a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a><a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        <div class="uk-position-bottom-center uk-position-small">   
+          <ul class="uk-dotnav">
+            <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+            <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+            <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="feature uk-margin-large-top uk-margin-large-bottom">
+      <div class="uk-container uk-container-small">
+        <h1 class="uk-text-center">Feature</h1>
+        <div class="uk-grid-medium uk-margin-large-top uk-child-width-1-3@l uk-child-width-1-3@m uk-child-width-1-2@s uk-child-width-1-1" uk-grid="">
+          <div>
+            <div class="feature_item uk-card uk-card-hover uk-card-body">
+              <div class="uk-grid uk-grid-small" uk-grid="">
+                <div class="uk-width-auto"><img src="http://via.placeholder.com/40x40" alt="features item"></div>
+                <div class="uk-width-expand">
+                  <h5>Lorem</h5>
+                  <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="feature_item uk-card uk-card-hover uk-card-body">
+              <div class="uk-grid uk-grid-small" uk-grid="">
+                <div class="uk-width-auto"><img src="http://via.placeholder.com/40x40" alt="features item"></div>
+                <div class="uk-width-expand">
+                  <h5>Lorem</h5>
+                  <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="feature_item uk-card uk-card-hover uk-card-body">
+              <div class="uk-grid uk-grid-small" uk-grid="">
+                <div class="uk-width-auto"><img src="http://via.placeholder.com/40x40" alt="features item"></div>
+                <div class="uk-width-expand">
+                  <h5>Lorem</h5>
+                  <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="feature_item uk-card uk-card-hover uk-card-body">
+              <div class="uk-grid uk-grid-small" uk-grid="">
+                <div class="uk-width-auto"><img src="http://via.placeholder.com/40x40" alt="features item"></div>
+                <div class="uk-width-expand">
+                  <h5>Lorem</h5>
+                  <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="feature_item uk-card uk-card-hover uk-card-body">
+              <div class="uk-grid uk-grid-small" uk-grid="">
+                <div class="uk-width-auto"><img src="http://via.placeholder.com/40x40" alt="features item"></div>
+                <div class="uk-width-expand">
+                  <h5>Lorem</h5>
+                  <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="feature_item uk-card uk-card-hover uk-card-body">
+              <div class="uk-grid uk-grid-small" uk-grid="">
+                <div class="uk-width-auto"><img src="http://via.placeholder.com/40x40" alt="features item"></div>
+                <div class="uk-width-expand">
+                  <h5>Lorem</h5>
+                  <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="feature_item uk-card uk-card-hover uk-card-body">
+              <div class="uk-grid uk-grid-small" uk-grid="">
+                <div class="uk-width-auto"><img src="http://via.placeholder.com/40x40" alt="features item"></div>
+                <div class="uk-width-expand">
+                  <h5>Lorem</h5>
+                  <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="feature_item uk-card uk-card-hover uk-card-body">
+              <div class="uk-grid uk-grid-small" uk-grid="">
+                <div class="uk-width-auto"><img src="http://via.placeholder.com/40x40" alt="features item"></div>
+                <div class="uk-width-expand">
+                  <h5>Lorem</h5>
+                  <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="feature_item uk-card uk-card-hover uk-card-body">
+              <div class="uk-grid uk-grid-small" uk-grid="">
+                <div class="uk-width-auto"><img src="http://via.placeholder.com/40x40" alt="features item"></div>
+                <div class="uk-width-expand">
+                  <h5>Lorem</h5>
+                  <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>2017</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2016</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>2015</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2012</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>2011</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2007</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+    </div>
+    <div class="uk-background-fixed uk-background-center-center uk-height-large uk-panel uk-margin-large-top uk-flex uk-flex-center uk-flex-middle" style="background-image: url(http://via.placeholder.com/1349x300;">
+      <div class="uk-text-center">
+        <h1 class="uk-heading-primary">Lorem Title</h1>
+        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Прямо большого одна толку? </p>
+        <button class="uk-button uk-button-primary">Buy</button>
+      </div>
+    </div><a href="" uk-toggle="target: #register">Регистрация</a>
+    <div class="uk-flex-top" id="register" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-text-center">
+          <h3>Регистрация</h3>
+          <form class="uk-margin-top" action="">
+            <div class="uk-margin uk-margin-bottom">
+              <div class="uk-inline uk-width-1-1"><span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
+                <input class="uk-input" type="text" placeholder="Имя Фамилия*">
+              </div>
+            </div>
+            <div class="uk-margin uk-margin-bottom">
+              <div class="uk-inline uk-width-1-1"><span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
+                <input class="uk-input" type="mail" placeholder="Email*">
+              </div>
+            </div>
+            <div class="uk-margin uk-margin-bottom">
+              <div class="uk-inline uk-width-1-1"><span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"> </span>
+                <input class="uk-input" type="password" placeholder="Пароль*">
+              </div>
+            </div>
+            <div class="uk-margin uk-margin-bottom">
+              <div class="uk-inline uk-width-1-1"><span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"> </span>
+                <input class="uk-input" type="password" placeholder="Пароль (еще раз)*">
+              </div>
+            </div>
+            <div class="uk-grid uk-margin-bottom uk-child-width-1-2@s" uk-grid>
+              <div>
+                <button class="uk-button uk-button-default" type="submit">Войти c <span uk-icon="icon: facebook"></span></button>
+              </div>
+              <div>
+                <button class="uk-button uk-button-default" type="submit">Войти c <span uk-icon="icon: google-plus"></span></button>
+              </div>
+            </div>
+            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+              <label>
+                <input class="uk-radio" type="radio" name="radio2" checked=""> Женщина
+              </label>
+              <label>
+                <input class="uk-radio" type="radio" name="radio2"> Мужчина
+              </label>
+            </div>
+            <label class="uk-margin">
+              <input class="uk-checkbox uk-margin-small-right" type="checkbox">Terms & Conditions
+            </label><br>
+            <button class="uk-margin uk-button uk-button-default log-in uk-box-shadow-hover-large" type="submit">Регистрация</button>
+          </form><a class="forget-password uk-margin uk-margin-bottom uk-button uk-button-text" href="">Уже зарегистрированы?</a>
+        </div>
+      </div>
+    </div>
+    <section class="gallery uk-margin-large-top uk-margin-large-bottom">
+      <div class="uk-container uk-container-small uk-text-center">
+        <div class="toolbar mb2 mt2 uk-margin-large-bottom"> <a class="btnGallery fil-cat" href="#all" data-rel="all">All</a><a class="btnGallery fil-cat" href="#websites" data-rel="web">Websites</a><a class="btnGallery fil-cat" href="#flyers" data-rel="flyers">Flyers</a><a class="btnGallery fil-cat" href="#cards" data-rel="bcards">Business Cards</a></div>
+        <div style="clear:both;"></div>
+        <div id="portfolio" uk-lightbox="animation: slide">
+          <div class="tile scale-anm web all"><a href="img/img.jpg" data-caption="Caption 1"><img src="img/img.jpg" alt="img1"></a></div>
+          <div class="tile scale-anm bcards all"><a href="img/img.jpg" data-caption="Caption 1"><img src="img/img.jpg" alt="img1"></a></div>
+          <div class="tile scale-anm web all"><a href="img/img.jpg" data-caption="Caption 1"><img src="img/img.jpg" alt="img1"></a></div>
+          <div class="tile scale-anm web all"><a href="img/img.jpg" data-caption="Caption 1"><img src="img/img.jpg" alt="img1"></a></div>
+          <div class="tile scale-anm flyers all"><a href="img/img.jpg" data-caption="Caption 1"><img src="img/img.jpg" alt="img1"></a></div>
+          <div class="tile scale-anm bcards all"><a href="img/img.jpg" data-caption="Caption 1"><img src="img/img.jpg" alt="img1"></a></div>
+          <div class="tile scale-anm flyers all"><a href="img/img.jpg" data-caption="Caption 1"><img src="img/img.jpg" alt="img1"></a></div>
+          <div class="tile scale-anm flyers all"><a href="img/img.jpg" data-caption="Caption 1"><img src="img/img.jpg" alt="img1"></a></div>
+          <div class="tile scale-anm flyers all"><a href="img/img.jpg" data-caption="Caption 1"><img src="img/img.jpg" alt="img1"></a></div>
+          <div class="tile scale-anm bcards all"><a href="img/img.jpg" data-caption="Caption 1"><img src="img/img.jpg" alt="img1"></a></div>
+          <div class="tile scale-anm bcards all"><a href="img/img.jpg" data-caption="Caption 1"><img src="img/img.jpg" alt="img1"></a></div>
+          <div class="tile scale-anm bcards all"><a href="img/img.jpg" data-caption="Caption 1"><img src="img/img.jpg" alt="img1"></a></div>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </section>
+    <section class="review">
+      <div class="uk-container">
+        <div class="uk-position-relative uk-visible-toggle uk-dark" uk-slideshow="min-height: 250; max-height: 400; animation: slide">
+          <ul class="uk-slideshow-items">
+            <li>
+              <div class="uk-position-center uk-text-center uk-padding-large">
+                <h3 class="review_title">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.  Далеко-далеко за словесными горами в стране.</h3>
+                <p>Фамилия И.</p>
+                <div class="uk-cover-container uk-border-circle uk-display-inline-block"><img src="http://via.placeholder.com/300x200" alt="Border circle" uk-cover>
+                  <canvas width="200" height="200"></canvas>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-position-center uk-text-center uk-padding-large">
+                <h3 class="review_title">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Далеко-далеко за словесными горами в стране.</h3>
+                <p>Фамилия И.</p>
+                <div class="uk-cover-container uk-border-circle uk-display-inline-block"><img src="http://via.placeholder.com/300x200" alt="Border circle" uk-cover>
+                  <canvas width="200" height="200"></canvas>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-position-center uk-text-center uk-padding-large">
+                <h3 class="review_title">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Далеко-далеко за словесными горами в стране.</h3>
+                <p>Фамилия И.</p>
+                <div class="uk-cover-container uk-border-circle uk-display-inline-block"><img src="http://via.placeholder.com/300x200" alt="Border circle" uk-cover>
+                  <canvas width="200" height="200"></canvas>
+                </div>
+              </div>
+            </li>
+          </ul><a class="uk-position-center-left uk-position-small" href="" uk-slidenav-previous uk-slideshow-item="previous"></a><a class="uk-position-center-right uk-position-small" href="" uk-slidenav-next uk-slideshow-item="next"></a>
+          <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        </div>
+      </div>
+    </section>
+    <div class="about uk-margin-large-top">
+      <div class="uk-container">
+        <div class="uk-grid uk-margin-large-bottom uk-child-width-1-1@s uk-child-width-1-1@m uk-child-width-1-2@l uk-child-width-1-1" uk-grid="">
+          <div class="uk-grid-item-match uk-margin-large-top"><img src="http://via.placeholder.com/500x500" alt="block"></div>
+          <div>
+            <h1 class="uk-text-center uk-margin-large-top uk-margin-medium-bottom">About our company</h1>
+            <ul class="uk-tab-bottom" data-uk-tab="{connect:'#my-tab'}">
+              <li class="uk-active"><a href="#">Tab1</a></li>
+              <li><a href="#">Tab2</a></li>
+              <li><a href="#">Tab3	</a></li>
+            </ul>
+            <ul class="uk-switcher uk-margin" id="my-tab">
+              <li> 
+                <div class="bin">
+                  <div class="skills bin_first">90%</div>
+                </div>
+                <div class="bin">
+                  <div class="skills bin_second">80%</div>
+                </div>
+                <div class="bin">
+                  <div class="skills bin_third">65%</div>
+                </div>
+                <div class="bin">
+                  <div class="skills bin_forth">60%</div>
+                </div>
+              </li>
+              <li>Content 2</li>
+              <li>Content 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="galleryMacy">
+      <div class="uk-container">
+        <h1 class="uk-text-center uk-margin-large-top">Macy Gallery</h1>
+        <div class="gallery2 uk-margin-large-top">
+          <div class="img"><img src="img/jpg/g1.jpg" alt="">
+            <div class="text uk-position-cover">
+              <h2>Header</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam voluptate. Ab adipisci blanditiis exercitationem magni quia rerum totam vero!</p>
+            </div>
+          </div>
+          <div class="img"><img src="img/jpg/g2.jpg" alt="">
+            <div class="text uk-position-cover">
+              <h2>Header</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam voluptate. Ab adipisci blanditiis exercitationem magni quia rerum totam vero!</p>
+            </div>
+          </div>
+          <div class="img"><img src="img/jpg/g3.jpg" alt="">
+            <div class="text uk-position-cover">
+              <h2>Header</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam voluptate. Ab adipisci blanditiis exercitationem magni quia rerum totam vero!</p>
+            </div>
+          </div>
+          <div class="img"><img src="img/jpg/g4.jpg" alt="">
+            <div class="text uk-position-cover">
+              <h2>Header</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam voluptate. Ab adipisci blanditiis exercitationem magni quia rerum totam vero!</p>
+            </div>
+          </div>
+          <div class="img"><img src="img/jpg/g5.jpg" alt="">
+            <div class="text uk-position-cover">
+              <h2>Header</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam voluptate. Ab adipisci blanditiis exercitationem magni quia rerum totam vero!</p>
+            </div>
+          </div>
+          <div class="img"><img src="img/jpg/g6.jpg" alt="">
+            <div class="text uk-position-cover">
+              <h2>Header</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam voluptate. Ab adipisci blanditiis exercitationem magni quia rerum totam vero!</p>
+            </div>
+          </div>
+          <div class="img"><img src="img/jpg/g7.jpg" alt="">
+            <div class="text uk-position-cover">
+              <h2>Header</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam voluptate. Ab adipisci blanditiis exercitationem magni quia rerum totam vero!</p>
+            </div>
+          </div>
+          <div class="img"><img src="img/jpg/g8.jpg" alt="">
+            <div class="text uk-position-cover">
+              <h2>Header</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam voluptate. Ab adipisci blanditiis exercitationem magni quia rerum totam vero!</p>
+            </div>
+          </div>
+          <div class="img"><img src="img/jpg/g9.jpg" alt="">
+            <div class="text uk-position-cover">
+              <h2>Header</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam voluptate. Ab adipisci blanditiis exercitationem magni quia rerum totam vero!</p>
+            </div>
+          </div>
+          <div class="img"><img src="img/jpg/g10.jpg" alt="">
+            <div class="text uk-position-cover">
+              <p>Header</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam voluptate. Ab adipisci blanditiis exercitationem magni quia rerum totam vero!</p>
+            </div>
+          </div>
+          <div class="img"><img src="img/jpg/g11.jpg" alt="">
+            <div class="text uk-position-cover">
+              <h2>Header</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam voluptate. Ab adipisci blanditiis exercitationem magni quia rerum totam vero!</p>
+            </div>
+          </div>
+          <div class="img"><img src="img/jpg/g12.jpg" alt="">
+            <div class="text uk-position-cover">
+              <h2>Header</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam voluptate. Ab adipisci blanditiis exercitationem magni quia rerum totam vero!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="touch uk-margin-large-top uk-margin-large-bottom">
+      <div class="uk-container">
+        <div class="uk-grid uk-margin-large-top uk-child-width-1-1@s uk-child-width-1-1@m uk-child-width-1-2@l uk-child-width-1-1" uk-grid="">
+          <div><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d11703.632850979258!2d74.5756082!3d42.832552650000004!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skg!4v1520688767456" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+          <div class="uk-padding">
+            <h1 class="uk-heading-primary">Keep In Touch</h1>
+            <form>
+              <fieldset class="uk-fieldset">
+                <div class="uk-margin">
+                  <input class="uk-input" type="text" placeholder="Input">
+                </div>
+                <div class="uk-margin">
+                  <input class="uk-input" type="mail" placeholder="Email">
+                </div>
+                <div class="uk-margin">
+                  <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                </div>
+              </fieldset>
+              <button class="uk-button uk-button-primary">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="countdown uk-margin-large-top uk-flex uk-flex-center">
+      <div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="date: 2018-04-30T12:30:55+00:00">
+        <div>
+          <div class="uk-countdown-number uk-countdown-days"></div>
+          <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+        </div>
+        <div class="uk-countdown-separator">.</div>
+        <div>
+          <div class="uk-countdown-number uk-countdown-hours"></div>
+          <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+        </div>
+        <div class="uk-countdown-separator">:</div>
+        <div>
+          <div class="uk-countdown-number uk-countdown-minutes"></div>
+          <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+        </div>
+        <div class="uk-countdown-separator">:</div>
+        <div>
+          <div class="uk-countdown-number uk-countdown-seconds"></div>
+          <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+        </div>
+      </div>
+    </div>
+    <div class="step-list-one uk-margin-large-top">
+      <div class="uk-grid uk-grid-collapse uk-grid-match uk-text-center uk-child-width-1-4@m uk-child-width-1-2@s uk-child-width-1-1" uk-grid>
+        <div class="item uk-padding uk-box-shadow-hover-large">
+          <div class="img uk-margin-bottom"><span class="stepListOne_icon" uk-icon="icon: cart"></span></div>
+          <div class="title">
+            <h3>Something</h3>
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolorem!</p>
+          </div>
+        </div>
+        <div class="item uk-padding uk-box-shadow-hover-large">
+          <div class="img uk-margin-bottom"><span class="stepListOne_icon" uk-icon="icon: commenting"></span></div>
+          <div class="title">
+            <h3>Something</h3>
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolorem!</p>
+          </div>
+        </div>
+        <div class="item uk-padding uk-box-shadow-hover-large">
+          <div class="img uk-margin-bottom"><span class="stepListOne_icon" uk-icon="icon: lifesaver"></span></div>
+          <div class="title">
+            <h3>Something</h3>
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolorem!</p>
+          </div>
+        </div>
+        <div class="item uk-padding uk-box-shadow-hover-large">
+          <div class="img uk-margin-bottom"><span class="stepListOne_icon" uk-icon="icon: cog"></span></div>
+          <div class="title">
+            <h3>Something</h3>
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolorem!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stepListTwo uk-container uk-margin-large-top">
+      <div class="uk-grid uk-flex-middle" uk-grid>
+        <div class="stepListTwo_description uk-width-expand@m uk-width-1-2@s uk-width-1-1">
+          <div class="uk-grid uk-child-width-1-1" uk-grid>
+            <div class="uk-grid uk-box-shadow-hover-medium" uk-grid>
+              <div class="stepListTwo_description_count uk-width-auto">
+                <div><span class="uk-icon-button step"><span>1</span></span></div>
+              </div>
+              <div class="description uk-width-expand">
+                <div>
+                  <h3>Create something</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid veniam eaque. Eos laudantium voluptatum, similique sit quia delectus facere!</p>
+                </div>
+              </div>
+            </div>
+            <div class="uk-grid uk-box-shadow-hover-medium" uk-grid>
+              <div class="stepListTwo_description_count uk-width-auto">
+                <div><span class="uk-icon-button step"><span>2</span></span></div>
+              </div>
+              <div class="description uk-width-expand">
+                <div>
+                  <h3>Create something</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid veniam eaque. Eos laudantium voluptatum, similique sit quia delectus facere!</p>
+                </div>
+              </div>
+            </div>
+            <div class="uk-grid uk-box-shadow-hover-medium" uk-grid>
+              <div class="stepListTwo_description_count uk-width-auto">
+                <div><span class="uk-icon-button step"><span>3</span></span></div>
+              </div>
+              <div class="description uk-width-expand">
+                <div>
+                  <h3>Create something</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid veniam eaque. Eos laudantium voluptatum, similique sit quia delectus facere!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stepListTwo_image uk-width-2-5@m uk-width-1-2@s uk-width-1-1">
+          <div class="uk-background-cover uk-height-large" style="background-image: url(http://via.placeholder.com/450x600);"></div>
+        </div>
+      </div>
+    </div>
+    <div class="step-list-three uk-margin-large-top uk-container">
+      <div class="uk-child-width-1-2@s uk-child-width-1-1" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-box-shadow-hover-large">
+            <div class="uk-card-media-top uk-cover-container"><img src="http://via.placeholder.com/600x600" alt="" uk-cover>
+              <canvas width="300" height="300"></canvas>
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title uk-text-center">Title</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eveniet labore, impedit illum ullam consequatur facilis culpa cumque commodi incidunt repellat? Totam est velit aliquam hic deleniti reprehenderit eum veritatis.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-box-shadow-hover-large">
+            <div class="uk-card-body">
+              <h3 class="uk-card-title uk-text-center">Title</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quam tempore, error ullam eaque ipsum maiores animi fugiat blanditiis voluptatem temporibus quia! At sit totam rerum libero vel tempora accusamus?</p>
+            </div>
+            <div class="uk-card-media-bottom uk-cover-container"><img src="http://via.placeholder.com/600x600" alt="" uk-cover>
+              <canvas width="300" height="300"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="step-list-four uk-container uk-margin-large-top">
+      <div class="uk-grid-collapse uk-margin uk-flex-middle uk-child-width-1-2@s uk-child-width-1-1" uk-grid>
+        <div class="uk-card-media-left uk-cover-container"><img src="http://via.placeholder.com/600x600" alt="" uk-cover>
+          <canvas width="400" height="400"></canvas>
+        </div>
+        <div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">Title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nobis deserunt aliquid autem laborum maiores tempore, dicta ullam voluptatum repellendus. Pariatur expedita veniam totam error, quibusdam omnis culpa accusantium animi!</p>
+          </div>
+        </div>
+      </div>
+      <div class="uk-card uk-card-default uk-grid-collapse uk-margin uk-flex-middle uk-box-shadow-hover-large uk-child-width-1-2@s uk-child-width-1-1" uk-grid>  
+        <div class="uk-card-media-right uk-cover-container uk-flex-last@s"><img src="http://via.placeholder.com/600x600" alt="" uk-cover>
+          <canvas width="400" height="400"></canvas>
+        </div>
+        <div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">Title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nobis deserunt aliquid autem laborum maiores tempore, dicta ullam voluptatum repellendus. Pariatur expedita veniam totam error, quibusdam omnis culpa accusantium animi!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ourTeam uk-container uk-margin-large-top" uk-slider>
+      <div class="uk-position-relative uk-light">
+        <ul class="uk-slider-items uk-grid uk-grid-match uk-child-width-1-3@m uk-child-width-1-2@s uk-child-width-1-1">
+          <li>
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top uk-cover-container"><img src="http://via.placeholder.com/600x600" alt="" uk-cover>
+                <canvas width="300" height="300"></canvas>
+              </div>
+              <div class="uk-card-body uk-text-center">
+                <h3 class="uk-card-title">Name Surname</h3>
+                <p class="post">Developper</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, officia.</p>
+                <div class="social"><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: twitter"></a><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: facebook"></a><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: google-plus"></a><a class="uk-icon-button" href="" uk-icon="icon: linkedin"></a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top uk-cover-container"><img src="http://via.placeholder.com/600x600" alt="" uk-cover>
+                <canvas width="300" height="300"></canvas>
+              </div>
+              <div class="uk-card-body uk-text-center">
+                <h3 class="uk-card-title">Name Surname</h3>
+                <p class="post">Developper</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, officia.</p>
+                <div class="social"><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: twitter"></a><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: facebook"></a><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: google-plus"></a><a class="uk-icon-button" href="" uk-icon="icon: linkedin"></a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top uk-cover-container"><img src="http://via.placeholder.com/600x600" alt="" uk-cover>
+                <canvas width="300" height="300"></canvas>
+              </div>
+              <div class="uk-card-body uk-text-center">
+                <h3 class="uk-card-title">Name Surname</h3>
+                <p class="post">Developper</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, officia.</p>
+                <div class="social"><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: twitter"></a><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: facebook"></a><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: google-plus"></a><a class="uk-icon-button" href="" uk-icon="icon: linkedin"></a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top uk-cover-container"><img src="http://via.placeholder.com/600x600" alt="" uk-cover>
+                <canvas width="300" height="300"></canvas>
+              </div>
+              <div class="uk-card-body uk-text-center">
+                <h3 class="uk-card-title">Name Surname</h3>
+                <p class="post">Developper</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, officia.</p>
+                <div class="social"><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: twitter"></a><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: facebook"></a><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: google-plus"></a><a class="uk-icon-button" href="" uk-icon="icon: linkedin"></a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top uk-cover-container"><img src="http://via.placeholder.com/600x600" alt="" uk-cover>
+                <canvas width="300" height="300"></canvas>
+              </div>
+              <div class="uk-card-body uk-text-center">
+                <h3 class="uk-card-title">Name Surname</h3>
+                <p class="post">Developper</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, officia.</p>
+                <div class="social"><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: twitter"></a><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: facebook"></a><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: google-plus"></a><a class="uk-icon-button" href="" uk-icon="icon: linkedin"></a></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+    </div>
+    <div class="priceTable uk-container uk-margin-large-top uk-margin-large-bottom">
+      <div class="uk-grid uk-grid-match uk-grid-small uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-child-width-1-1">
+        <div>
+          <div class="item uk-text-center uk-box-shadow-hover-large">
+            <div class="header">
+              <h2 class="uk-card-title">Personal</h2>
+            </div>
+            <div class="price">
+              <h2>$99/Month</h2>
+            </div>
+            <div class="services">
+              <ol class="uk-nav uk-nav-default">
+                <li>
+                  <p>Hosting</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Email marketing</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Database</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Design Pack</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Website Layout</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Online Store</p>
+                </li>
+              </ol>
+            </div>
+            <div class="button">
+              <button class="uk-button uk-button-default" type="button">Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="item uk-text-center uk-box-shadow-hover-large">
+            <div class="header">
+              <h2 class="uk-card-title">Personal</h2>
+            </div>
+            <div class="price">
+              <h2>$99/Month</h2>
+            </div>
+            <div class="services">
+              <ol class="uk-nav uk-nav-default">
+                <li>
+                  <p>Hosting</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Email marketing</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Database</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Design Pack</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Website Layout</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Online Store</p>
+                </li>
+              </ol>
+            </div>
+            <div class="button">
+              <button class="uk-button uk-button-default" type="button">Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="item uk-text-center uk-box-shadow-hover-large">
+            <div class="header">
+              <h2 class="uk-card-title">Personal</h2>
+            </div>
+            <div class="price">
+              <h2>$99/Month</h2>
+            </div>
+            <div class="services">
+              <ol class="uk-nav uk-nav-default">
+                <li>
+                  <p>Hosting</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Email marketing</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Database</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Design Pack</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Website Layout</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Online Store</p>
+                </li>
+              </ol>
+            </div>
+            <div class="button">
+              <button class="uk-button uk-button-default" type="button">Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="item uk-text-center uk-box-shadow-hover-large">
+            <div class="header">
+              <h2 class="uk-card-title">Personal</h2>
+            </div>
+            <div class="price">
+              <h2>$99/Month</h2>
+            </div>
+            <div class="services">
+              <ol class="uk-nav uk-nav-default">
+                <li>
+                  <p>Hosting</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Email marketing</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Database</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Design Pack</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Website Layout</p>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                  <p>Online Store</p>
+                </li>
+              </ol>
+            </div>
+            <div class="button">
+              <button class="uk-button uk-button-default" type="button">Buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabs uk-margin-large-top uk-container">
+      <ul uk-tab>
+        <li> <a href="">First</a></li>
+        <li><a href="">Second</a></li>
+        <li><a href="">Third</a></li>
+      </ul>
+      <ul class="uk-switcher uk-margin">
+        <li>
+          <div class="uk-clearfix">
+            <div class="uk-float-left uk-margin-right uk-margin-left"><img src="http://via.placeholder.com/200x200" alt=""></div>
+            <div class="text-in-float">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid praesentium exercitationem fugiat libero, commodi facere quod iste harum ex, odit minima laborum repellendus similique illo sit, doloribus et atque deserunt molestias obcaecati. Incidunt tempora maxime atque. At odit harum consectetur doloremque, cumque quis, dolorem aliquam officiis voluptatibus autem odio adipisci blanditiis eligendi expedita beatae optio tempore quo, quidem delectus dignissimos eveniet aperiam non porro? Tenetur ipsam dignissimos rem voluptate placeat, voluptates eligendi ab commodi voluptas! Veniam consequatur ipsa voluptate veritatis, dolorem molestias in maxime sequi voluptates deleniti nesciunt doloribus ullam sit ut corporis facilis modi voluptatem illo tenetur expedita excepturi qui. Voluptatum, voluptatibus quibusdam recusandae magnam dolorum eaque qui hic ab nihil nulla sunt sint accusantium facere asperiores a unde soluta delectus veritatis. Aliquid rem rerum ipsa tempora alias atque quibusdam inventore, ducimus non sit pariatur? Adipisci nesciunt nulla dolor molestiae atque odio aut hic nihil architecto voluptatum! Doloribus ducimus atque rerum veritatis a, qui deleniti fugit hic delectus. Commodi necessitatibus inventore quos, id in nesciunt, natus doloremque ipsum praesentium quod tenetur enim vitae cumque accusamus excepturi quam. Provident placeat ipsa, illum reiciendis odit necessitatibus officia voluptates amet optio consectetur eveniet, eligendi magni exercitationem sit, tempore voluptate dolorem ad distinctio?</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-clearfix">
+            <div class="uk-float-right uk-margin-left uk-margin-right"><img src="http://via.placeholder.com/200x200" alt=""></div>
+            <div class="text-in-float">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam porro iusto officia, a tempore tenetur nisi ea aliquid impedit voluptate eius blanditiis. Quam, magnam beatae! Explicabo veniam doloremque a id! Quia, eveniet quos fugit corporis similique, maiores labore adipisci perferendis obcaecati recusandae voluptatem? Perferendis assumenda, vero nulla consectetur saepe recusandae magni est itaque placeat explicabo hic quos vitae nisi dolorem odit voluptatem iure? Consectetur fugiat incidunt eos facilis officiis similique, a in iste autem accusantium asperiores nisi iusto error totam repellat facere eveniet, sunt, est corrupti cumque possimus aspernatur. Deserunt fugit unde dignissimos iste nemo ducimus obcaecati nobis vero? Libero quae, architecto reprehenderit repudiandae dicta minima. Praesentium pariatur eum, aut dolores hic ipsum ex voluptatibus voluptatem unde asperiores eaque, doloribus, cum accusantium. Accusamus at consequatur aliquam sed animi officiis, ipsam corporis nostrum excepturi, amet facilis! Facilis consectetur dignissimos quia dicta eveniet cum sapiente dolorum, quasi vel facere! Ducimus necessitatibus corporis numquam aut quia tempora facere? Mollitia voluptate amet, quisquam, temporibus doloremque natus laboriosam esse autem, ducimus totam dicta! Dicta sit in tempore perferendis delectus, iste neque dignissimos dolore aliquid obcaecati eligendi minima eius vel est labore cumque quis nostrum quibusdam! Dolores aliquid atque consequatur veritatis placeat esse eveniet aut ratione.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-clearfix">
+            <div class="uk-float-left uk-margin-right uk-margin-left"><img src="http://via.placeholder.com/200x200" alt=""></div>
+            <div class="text-in-float">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium nemo itaque facilis. Cumque sequi deserunt laborum velit ducimus aliquid voluptas ex, autem sunt dolor! Dolores magni fugiat quo velit animi modi distinctio, iure exercitationem natus cum incidunt unde soluta facere harum blanditiis nulla hic! Voluptatum tenetur placeat architecto rerum. Illo tenetur reiciendis adipisci cum nesciunt, ducimus, possimus veniam excepturi asperiores perspiciatis maxime, qui dignissimos recusandae. Minima, autem deserunt. Autem tempora non provident, aut magni, nam temporibus corrupti labore dolor vel veniam sed eos aliquid error voluptatibus neque nemo, quod ducimus accusamus nisi voluptas nulla delectus et ea? Tenetur quaerat voluptatem quam eius eaque omnis, similique vitae pariatur dolores dolor officia necessitatibus modi alias minus blanditiis. Aliquid, recusandae inventore cum reprehenderit culpa laboriosam itaque, omnis, velit illum harum accusantium quae. Veniam harum, quaerat nam velit repellendus voluptatibus? Quam id nostrum, dolorum ipsum eos dignissimos ad eveniet vitae architecto velit quasi commodi quibusdam, culpa sit possimus. Consequuntur quae cum corrupti facilis ullam reiciendis doloremque nesciunt repellendus numquam, magni, neque suscipit dolorum laboriosam nihil assumenda consequatur. Alias rem quo consequatur incidunt officiis asperiores sequi modi quasi ullam quibusdam commodi veritatis quae similique mollitia impedit dolor perspiciatis at nostrum, dolores voluptates eius natus. Nihil!</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="get-in-touch">
+      <div class="uk-position-bottom-right uk-padding uk-position-fixed">
+        <div class="with-tel uk-hidden@s"><a class="uk-icon-button" href="tel: +(996) 559 - 011 - 376" uk-icon="icon: receiver"></a></div>
+        <div class="with-whatsapp"><a class="uk-icon-button" href="https://api.whatsapp.com/send?phone=996559011376" target="blank" uk-icon="icon: whatsapp"></a></div>
+      </div>
+    </div>
+    <div class="toTop">
+      <div class="uk-position-bottom-right uk-padding uk-position-fixed"><a class="uk-icon-button" href="index.html" uk-totop uk-scroll></a></div>
+    </div>
+    <footer>
+      <div class="uk-container">
+        <nav class="uk-navbar-container uk-visible@s" uk-navbar>
+          <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="index.html">Home</a></li>
+              <li><a href="#about" uk-scroll>About</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="#team" uk-scroll>Team</a></li>
+            </ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li class="russian"><a href="" rel="ru">RU</a></li>
+              <li class="english"><a href="" rel="en">EN</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer_mobile uk-margin-bottom uk-hidden@s">
+          <div class="uk-text-center">
+            <ul class="uk-nav uk-dropdown-nav">
+              <li class="uk-active"><a href="index.html">Home</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#about" uk-scroll>About</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="">Service</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#team" uk-scroll>Team</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="uk-grid uk-flex-middle uk-child-width-1-2@s uk-child-width-1-1" uk-grid>
+          <div class="uk-text-left">
+            <div class="private uk-margin-small-left"><a class="uk-button uk-button-text uk-margin-right" href="something.pdf" target="_blank">Terms of Use</a><a class="uk-button uk-button-text" href="something.pdf" target="_blank">Privacy Policy</a></div>
+          </div>
+          <div class="uk-text-right">
+            <div class="subscribe uk-margin-small-right"> 
+              <p>Subsribe: </p><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: twitter"></a><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: facebook"></a><a class="uk-icon-button uk-margin-right" href="" uk-icon="icon: google-plus"></a><a class="uk-icon-button" href="" uk-icon="icon: linkedin"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="uk-text-center"><span>&copy; NambaSoft.2018</span></div>
+      </div>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.min.js"></script>
+  </body>
+</html>

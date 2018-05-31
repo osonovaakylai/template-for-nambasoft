@@ -1,0 +1,25 @@
+.step-list-one
+    position: relative
+    .item
+        transition: 0.4s
+    .item:nth-child(odd)
+        background: #f8f8f8
+        &:hover
+            background: lightblue
+    .item:nth-child(even)
+        background: gray
+        color: white
+        .title
+            h3
+                color: white
+        &:hover
+            background: lightblue
+            color: black
+            .title
+                h3
+                    color: black
+
+span.stepListOne_icon
+    svg
+        width: 100px
+        height: 100px

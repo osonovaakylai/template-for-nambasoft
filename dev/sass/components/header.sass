@@ -1,0 +1,28 @@
+header
+    background: #f8f8f8
+    nav.uk-navbar-container  
+        background: transparent
+        .uk-navbar-right
+            ul
+                li.russian
+                    a
+                        position: relative
+                        &:before
+                            position: absolute
+                            content: ""
+                            background: #999
+                            top: 25px
+                            bottom: 0
+                            left: 48px
+                            right: 0
+                            width: 1px
+                            height: 30px
+    .mobile
+        button.uk-button-default
+            border: none
+
+#signIn
+    div
+        form
+            .uk-inline
+                width: 100%

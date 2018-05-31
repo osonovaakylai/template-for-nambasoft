@@ -1,0 +1,53 @@
+footer
+    .uk-container
+        nav.uk-navbar-container(uk-navbar, class="uk-visible@s")
+            .uk-navbar-left
+                ul.uk-navbar-nav
+                    li.uk-active
+                        a(href="index.html") Home
+                    li
+                        a(href="#about", uk-scroll) About
+                    li
+                        a(href="") Service
+                    li
+                        a(href="#team", uk-scroll) Team
+            .uk-navbar-right
+                ul.uk-navbar-nav
+                    li.russian
+                        a(href="", rel="ru") RU
+                    li.english
+                        a(href="", rel="en") EN
+        .footer_mobile.uk-margin-bottom(class="uk-hidden@s")
+            .uk-text-center
+                ul.uk-nav.uk-dropdown-nav
+                    li.uk-active
+                        a(href="index.html") Home
+                    li.uk-nav-divider
+                    li
+                        a(href="#about", uk-scroll) About
+                    li.uk-nav-divider
+                    li
+                        a(href="") Service
+                    li.uk-nav-divider
+                    li
+                        a(href="#team", uk-scroll) Team
+
+
+        .uk-grid.uk-flex-middle(class="uk-child-width-1-2@s uk-child-width-1-1", uk-grid)
+            .uk-text-left
+                .private.uk-margin-small-left
+                    a.uk-button.uk-button-text.uk-margin-right(href="something.pdf", target="_blank") Terms of Use
+                    a.uk-button.uk-button-text(href="something.pdf", target="_blank") Privacy Policy
+            .uk-text-right
+                .subscribe.uk-margin-small-right 
+                    p Subsribe: 
+                    a.uk-icon-button.uk-margin-right(href="", uk-icon="icon: twitter")
+                    a.uk-icon-button.uk-margin-right(href="", uk-icon="icon: facebook")
+                    a.uk-icon-button.uk-margin-right(href="", uk-icon="icon: google-plus")
+                    a.uk-icon-button(href="", uk-icon="icon: linkedin")
+    .copyright
+        .uk-text-center
+            span &copy; NambaSoft.2018
+
+
+

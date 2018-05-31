@@ -1,0 +1,31 @@
+@keyframes pulse
+  0%
+    transform:scale(0, 0)
+  100%
+    transform: scale(1.5, 1.5)
+    opacity: 0.1
+    
+.toTop
+    .uk-position-bottom-right
+        z-index: 200
+        a
+            background-color: lightblue
+            height: 60px
+            width: 60px
+            position: relative
+            &:before
+                position: absolute
+                content: ' '
+                animation: pulse 1s infinite
+                background-color: lightblue
+                height: 60px
+                width: 60px
+                left: 0
+                top: 0
+                border-radius: 50%
+                opacity: 0.7
+                border-color: lightblue
+            svg
+                color: white
+                width: 30px
+                height: 30px
